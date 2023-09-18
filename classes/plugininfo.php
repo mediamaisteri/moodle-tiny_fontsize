@@ -30,20 +30,39 @@ use editor_tiny\plugin_with_buttons;
 use editor_tiny\plugin_with_menuitems;
 use editor_tiny\plugin_with_configuration;
 
+/**
+ * Plugininfo class.
+ */
 class plugininfo extends plugin implements plugin_with_configuration, plugin_with_buttons, plugin_with_menuitems {
 
+    /**
+     * Get available buttons.
+     *
+     * @return array
+     */
     public static function get_available_buttons(): array {
         return [
             'tiny_fontsize/plugin',
         ];
     }
 
+    /**
+     * Get available menuitems.
+     *
+     * @return array
+     */
     public static function get_available_menuitems(): array {
         return [
             'tiny_fontsize/plugin',
         ];
     }
 
+    /**
+     * Get plugin configuration.
+     * Currently not in use.
+     *
+     * @return array
+     */
     public static function get_plugin_configuration_for_context(
         context $context,
         array $options,
