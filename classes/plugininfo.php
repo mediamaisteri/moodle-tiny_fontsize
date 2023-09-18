@@ -50,10 +50,6 @@ class plugininfo extends plugin implements plugin_with_configuration, plugin_wit
         array $fpoptions,
         ?\editor_tiny\editor $editor = null
     ): array {
-        return [
-            // Your values go here.
-            // These will be mapped to a namespaced EditorOption in Tiny.
-            'myFirstProperty' => 'TODO Calculate your values here',
-        ];
+        return [];
     }
 }

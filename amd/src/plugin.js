@@ -25,7 +25,6 @@ import {getTinyMCE} from 'editor_tiny/loader';
 import {getPluginMetadata} from 'editor_tiny/utils';
 
 import {component, pluginName} from './common';
-import {register as registerOptions} from './options';
 import {getSetup as getCommandSetup} from './commands';
 import * as Configuration from './configuration';
 
@@ -45,9 +44,6 @@ export default new Promise(async(resolve) => {
 
     // Reminder: Any asynchronous code must be run before this point.
     tinyMCE.PluginManager.add(pluginName, (editor) => {
-        // Register any options that your plugin has
-        registerOptions(editor);
-
         // Setup any commands such as buttons, menu items, and so on.
         setupCommands(editor);
 
