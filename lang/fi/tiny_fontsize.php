@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['button_fontsize'] = 'Font size';
-$string['menuitem_fontsize'] = 'Font size';
-$string['pluginname'] = 'Font size plugin';
-$string['privacy:metadata'] = 'Font size plugin does not store any personal data';
+$string['button_fontsize'] = 'Kirjasinkoko';
+$string['menuitem_fontsize'] = 'Kirjasinkoko';
+$string['pluginname'] = 'Kirjasinkoko-lisäosa';
+$string['privacy:metadata'] = 'Kirjasinkoko-lisäosa ei tallentaa henkilötietoja.';
