@@ -100,7 +100,7 @@ export const getSetup = async() => {
         }
 
         // Create an array of submenu items using a map function
-        const submenuItems = fontSizes.map(({ size, label }) => ({
+        const submenuItems = fontSizes.map(({size, label}) => ({
             type: 'menuitem',
             text: label,
             onAction: handleFontSize(editor, size),
