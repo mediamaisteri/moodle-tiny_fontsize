@@ -34,10 +34,6 @@ import {
 
 const getToolbarConfiguration = (instanceConfig) => {
     let toolbar = instanceConfig.toolbar;
-    toolbar = addToolbarButtons(toolbar, 'content', [
-        fontsizeButtonName,
-    ]);
-
     return toolbar;
 };
 
